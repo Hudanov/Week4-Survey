@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/tailwind.css" rel="stylesheet">
+    <title>Week4</title>
+</head>
+
+<body class="bg-gray-800 text-white h-screen">
+    <h1 id="title" class="text-center text-5xl font-extrabold"> Week 4 survey </h1>
+    <p id="description" class="text-center text-4xl">Test survey to get into HTML&CSS</p>
+    <form id="survey-form" class="h-4/5">
+        <div class="flex flex-col md:flex-row justify-center h-2/3 md:flex">
+            <fieldset class="border-4 border-white rounded-lg text-center self-center w-1/2 h-2/3 md:text-2xl sm:text-sm">
+                <legend class="text-3xl">Your contact info</legend>
+                <div class="p-1.5">
+                    <lable for="name" id="name-label">Your name</lable>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="here" class="w-1/4 text-center text-black">
+                </div>
+                <div class="p-1.5">
+                    <lable for="email" id="email-label">Your email</lable>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="here" class="w-1/4 text-center text-black">
+                </div>
+                <div class="p-1.5">
+                    <lable for="age" id="age-label">Your age</lable>
+                    <br>
+                    <input type="number" id="age" name="age" min="8" max="100" placeholder="here" class="w-1/4 text-center text-black">
+                </div>
+            </fieldset>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center md:flex">
+            <fieldset class="border-4 border-white rounded-lg text-center self-center w-1/2 h-2/3 md:text-2xl sm:text-sm">
+                <legend class="text-3xl">Survey</legend>
+                <div class="p-1.5">
+                    Radio Buttons:
+                </div>
+                <div class="p-1.5">
+                    <lable>
+                        <input type="radio" name="radio" value="test1"> test 1 </input>
+                    </lable>
+                </div>
+                <div class="p-1.5">
+                    <lable>
+                        <input type="radio" name="radio" value="test2"> test 2 </input>
+                    </lable>
+                </div>
+                <div class="p-1.5">
+                    <label for="dropdown">Dropdown:</label>
+                    <br>
+                    <select id="dropdown" name="dropdown" class="text-black m-3">
+                        <option selected>Select one...</option>
+                        <option value="opt1">option 1</option>
+                        <option value="opt2">option 2</option>
+                        <option value="opt3">option 3</option>
+                    </select>
+                </div>
+                <div class="p-1.5">
+                    <label for="comments">Text area:</label>
+                    <br>
+                    <textarea id="comments" name="comments" class="text-black m-3" placeholder="leave your comments here">
+                </textarea>
+                </div>
+                <div class="p-1.5">
+                    <input type="checkbox" value="subscribe" id="subsribe" class="mx-2"> 
+                    Subscribe to new surveys
+                    <input type="checkbox" value="accept" id="accept" class="mx-2"> 
+                    Accept rules of survey
+                </div>
+                <div class="p-4">
+                    <button type="submit" class="bg-yellow-800 w-1/4 rounded-lg hover:bg-green-600">Submit survey</button>
+                </div>
+            </fieldset>        
+        </div> 
+    </form>
+</body>
+
+</html>
